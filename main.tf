@@ -12,7 +12,7 @@ resource "tfe_workspace" "aws-development" {
 }
 
 resource "tfe_variable" "aws-development-key" {
-  key          = "secret-key"
+  key          = "secret_key"
   value        = var.aws-dev-key
   category     = "env"
   sensitive    = true
@@ -27,7 +27,7 @@ resource "tfe_workspace" "azure-development" {
 }
 
 resource "tfe_variable" "azure-development-key" {
-  key          = "secret-key"
+  key          = "secret_key"
   value        = var.azure-dev-key
   category     = "env"
   sensitive    = true
@@ -42,7 +42,7 @@ resource "tfe_workspace" "aws-production" {
 }
 
 resource "tfe_variable" "aws-production-key" {
-  key          = "secret-key"
+  key          = "secret_key"
   value        = var.aws-prod-key
   category     = "env"
   sensitive    = true
@@ -57,7 +57,7 @@ resource "tfe_workspace" "azure-production" {
 }
 
 resource "tfe_variable" "azure-production-key" {
-  key          = "secret-key"
+  key          = "secret_key"
   value        = var.azure-prod-key
   category     = "env"
   sensitive    = true
