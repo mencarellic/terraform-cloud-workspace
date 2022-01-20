@@ -4,11 +4,6 @@ resource "tfe_organization" "carlo-cloud" {
   collaborator_auth_policy = "two_factor_mandatory"
 }
 
-resource "tfe_workspace" "test" {
-  name         = "my-workspace-name"
-  organization = tfe_organization.carlo-cloud.name
-}
-
 resource "tfe_team" "cloud-engineering" {
   name         = "cloud-engineering"
   organization = tfe_organization.carlo-cloud.name
