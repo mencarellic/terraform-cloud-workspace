@@ -11,7 +11,7 @@ resource "tfe_workspace" "terraform-aws-mq-broker" {
 
   vcs_repo {
     identifier     = "mencarellic/terraform-aws-mq-broker"
-    oauth_token_id = tfe_oauth_client.github.oauth_token_id
+    oauth_token_id = data.tfe_oauth_client.github.oauth_token_id
   }
 }
 
