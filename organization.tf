@@ -6,10 +6,10 @@ resource "tfe_organization" "carlo-cloud" {
 
 resource "tfe_project" "production" {
   organization = tfe_organization.carlo-cloud.name
-  name = "Production"
+  name         = "Production"
 }
 
 resource "tfe_project" "examples" {
   organization = tfe_organization.carlo-cloud.name
-  name = "Examples"
+  name         = "Examples"
 }
