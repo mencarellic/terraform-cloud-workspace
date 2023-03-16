@@ -5,6 +5,6 @@ resource "tfe_workspace" "carlo-is" {
 
   vcs_repo {
     identifier     = "mencarellic/carlo-is"
-    oauth_token_id = data.tfe_oauth_client.mencarellic.id
+    oauth_token_id = data.tfe_oauth_client.mencarellic.oauth_token_id
   }
 }
